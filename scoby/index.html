@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<h2>WELCOME TO OTHAYA MEDICAL TRAINING INSTITUTE FEEDBACK SYSTEM</h2> 
+
+<marquee> OTHAYA MEDICAL COLLGE FEEDBACK SYSTEM        
+Fill the below register below and submit Thank you.</marquee> 
+
+<marquee direction="right"
+
+behavior="alternate"
+
+style="border: Green 2px SOLID"> 
+
+powered by © sandstorm 
+
+</marquee> 
+<html lang="en"> 
+
+<head> 
+
+<style>
+body {
+  background-color: lightgreen;
+}
+</style>
+<div class="navbar">
+<a</a>
+
+</div>
+ <title>GFG- Store Data</title> 
+
+       
+<script> 
+
+var date=new Date();
+
+var day=date.getDate();
+
+var month=date.getMonth()+1;
+
+var year=date.getFullYear();
+
+document.write("<br>DATE:"+day+"/"+month+"/"+year);
+
+</script>
+
+
+<html>
+
+<body onload="startTime()">
+
+<h2>Time</h2>
+
+<div id="txt"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+ </head> 
+<h2>school resources</h2>
+<p><a href="https:///">school website</a></p><br>
+<p><a href="https:///">students portal</a></p>
+
+<h2>Animated Images</h2>
+
+<p>:</p>
+
+<img src="https://commons.wikimedia.org/wiki/File:Computer-screen-code-glitch-animation-gif-background-free.gif" alt="" style="width:48px;height:48px;">
+
+
+ <body> 
+<html> 
+
+
+<body>
+
+</marquee> 
+
+</body> 
+
+<center> 
+
+ <h1>STUDENTS ONLINE REGISTER</h1> 
+
+<form action="insert.php" method="post">
+
+
+ <label for="firstName">First Name:</label> 
+
+<input type="text" name="first_name" id="firstName"> 
+
+</p> 
+
+<p>
+
+<label for="lastName">Last Name:</label> 
+
+<input type="text" name="last_name" id="lastName"> 
+
+</p> 
+
+
+
+<p>
+
+<label for="coarse">Coarse:</label> 
+
+<input type="coarse" name="coarse" id="coarse"> 
+
+</p> 
+
+
+<p>
+
+<label for="department">Department:</label> 
+
+<input type="text" name="Department" id="Department"> 
+
+</p> 
+
+
+<p>
+
+<label for="admissionnumber">Admission Number:</label> 
+
+<input type="text" name="admission number" id="admissionNumber"> 
+
+</p> 
+
+
+<input type="submit" value="Submit"><br>
+
+</form> 
+
+</center>
+   
+<body>
+
+
+
+
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+    
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body> 
+       <h2>location Tracker</h2> 
+        <button onclick="getlocation();"> validate my location</button> 
+        <div id="demo" style="width: 600px; height: 400px; margin-left: 200px;"></div> 
+       
+        <script src="https://maps.google.com/maps/api/js?sensor=false"> </script> 
+        
+        <script type="text/javascript"> 
+        function getlocation(){ 
+            if(navigator.geolocation){ 
+                navigator.geolocation.getCurrentPosition(showPos, showErr); 
+            }
+            else{
+                alert("Sorry! your Browser does not support Geolocation API")
+            }
+        } 
+        //Showing Current Poistion on Google Map
+        function showPos(position){ 
+            latt = position.coords.latitude; 
+            long = position.coords.longitude; 
+            var lattlong = new google.maps.LatLng(latt, long); 
+            var myOptions = { 
+                center: lattlong, 
+                zoom: 15, 
+                mapTypeControl: true, 
+                navigationControlOptions: {style:google.maps.NavigationControlStyle.SMALL} 
+            } 
+            var maps = new google.maps.Map(document.getElementById("demo"), myOptions); 
+            var markers = 
+            new google.maps.Marker({position:lattlong, map:maps, title:"You are here!"}); 
+        } 
+
+        //Handling Error and Rejection
+             function showErr(error) {
+              switch(error.code){
+              case error.PERMISSION_DENIED:
+             alert("User denied the request for Geolocation API.");
+              break;
+             case error.POSITION_UNAVAILABLE:
+             alert("USer location information is unavailable.");
+            break;
+            case error.TIMEOUT:
+            alert("The request to get user location timed out.");
+            break;
+           case error.UNKNOWN_ERROR:
+            alert("An unknown error occurred.");
+            break;
+           }
+        }        
+        
+        </script>    
+
+
+</body>
+
+
+</html>
+
+
+
