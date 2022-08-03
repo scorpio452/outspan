@@ -1,0 +1,248 @@
+<!DOCT
+
+   <!DOCTYPE html>
+<h2>WELCOME TO COMPANY CUSTOMER FEEDBACK</h2> 
+
+<html lang="en"> 
+
+<head> 
+
+<marquee style="font-family:Book Antiqua; color: #00ff00" bgcolor="#000080" scrollamount="8"> COMPANY FEEDBACK SYSTEM </marquee>
+
+<style>
+body {
+  background-color: lightGreen;
+}
+
+</style>
+<div class="navbar">
+<a</a>
+
+</div>
+ <title>GFG- Store Data</title> 
+
+ 
+      <meta charset="UTF-8">
+      <meta name="viewport" content​=​"width=device-width, initial-scale=1.0"/>
+      <meta name="author" content="">
+      <title></title>
+      <style>
+         *
+         {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+         }
+ 
+         body
+         {
+            max-width: 500px;
+            margin: 2em auto;
+            padding: 0 0.5em;
+            font-size: 20px;
+         }
+ 
+         h1
+         {
+            text-align: center;
+         }
+ 
+         .api-support
+         {
+            display: block;
+         }
+ 
+         .hidden
+         {
+            display: none;
+         }
+ 
+         .value
+         {
+            font-weight: bold;
+         }
+ 
+         .author
+         {
+            display: block;
+            margin-top: 1em;
+         }
+         </script>
+body {
+  color: rgb(0, 0, 0);
+}
+h2 {
+  color: blue;
+}
+</style>
+      </style>
+  
+      <h1>Network Information</h1>
+      
+ 
+      <span id="ni-unsupported" class="api-support hidden">API not supported</span>
+      <span id="nio-supported" class="api-support hidden">Old API version supported</span>
+ 
+      <ul>
+         <li class="new-api hidden">
+            The connection type is <span id="t-value" class​=​"value"​>undefined</​span​>.
+         </li>
+         <li class="old-api hidden">
+            The connection bandwidth is <span id="b-value" class​=​"value"​>undefined</​span​>.
+         </li>
+         <li class="old-api hidden">
+            The connection is <span id="m-value" class​=​"value"​>undefined</​span​>.
+         </li>
+      </ul>
+ 
+  
+      <script>
+         var connection = window.navigator.connection    ||
+                          window.navigator.mozConnection ||
+                          null;
+         if (connection === null) {
+            document.getElementById('ni-unsupported').classList.remove('hidden');
+         } else if ('metered' in connection) {
+            document.getElementById('nio-supported').classList.remove('hidden');
+            [].slice.call(document.getElementsByClassName('old-api')).forEach(function(element) {
+               element.classList.remove('hidden');
+            });
+ 
+            var bandwidthValue = document.getElementById('b-value');
+            var meteredValue = document.getElementById('m-value');
+ 
+            connection.addEventListener('change', function (event) {
+               bandwidthValue.innerHTML = connection.bandwidth;
+               meteredValue.innerHTML = (connection.metered ? '' : 'not ') + 'metered';
+            });
+            connection.dispatchEvent(new Event('change'));
+         } else {
+            var typeValue = document.getElementById('t-value');
+            [].slice.call(document.getElementsByClassName('new-api')).forEach(function(element) {
+               element.classList.remove('hidden');
+            });
+ 
+            connection.addEventListener('typechange', function (event) {
+               typeValue.innerHTML = connection.type;
+            });
+            connection.dispatchEvent(new Event('typechange'));
+         }
+      
+        
+
+var date=new Date();
+
+var day=date.getDate();
+
+var month=date.getMonth()+1;
+
+var year=date.getFullYear();
+
+document.write("<br>DATE:"+day+"/"+month+"/"+year);
+
+</script>
+
+
+<html>
+
+<body onload="startTime()">
+
+<h2>Time</h2>
+
+<div id="txt"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+
+</head> 
+<h2>CHECK IN</h2>
+<form action="http://google.com">
+    <input type="submit" value="Collect new visitor details/" />
+</form>
+
+
+</head> 
+<h2>CHECK OUT</h2>
+
+<form action="http://google.com"> <input type="submit" value="Collect casual workers details" /> </form>
+   
+<section class="home-about">
+
+
+
+   <div class="image">
+
+      <img src="images/about-img.jpg" alt="">
+
+   </div>
+
+<style>
+body {
+  color: black;
+}
+h2 {
+  color: blue;
+}
+</style>
+</head>
+<body>
+<h1>INSTRUCTIONS</h1>
+<p>Click the (correct customer details) button to begin collecting customers information and submit to database).</p>
+<p>® sandstorm.</p>
+   <div class="content">
+
+      <h3>about us</h3>
+
+      <p>
+
+      <a href="about.php" class="btn"></a>
+
+   </div>
+
+
+   <div class="credit"> created by <span>© sandstorm</span> | all rights reserved! </div>
+
+
+
+</section>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+<marquee></marquee> 
+
+<marquee direction="right"
+
+behavior="alternate"
+
+style="border: Green 2px SOLID"> 
+
+powered by © sandstorm 
+
+</marquee> 
+
+<!-- custom js file link  -->
+
+<script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>
